@@ -1,0 +1,22 @@
+training:
+  batch_size: 8
+  epochs: 20
+
+  learning_rate: 0.0003
+  weight_decay: 0.01
+
+  sequence_length: 32
+
+scheduler:
+  step_size: 50
+  gamma: 0.95
+
+checkpoint:
+  save_every_epoch: true
+  directory: "llm_model/checkpoints_expanded_320"
+
+data:
+  train_file: "llm_model/data/processed/train_merged_320.json"
+
+device:
+  type: "auto"

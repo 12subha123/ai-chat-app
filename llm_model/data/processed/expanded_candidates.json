@@ -1,0 +1,902 @@
+[
+  {
+    "prompt": "What is physics?",
+    "answer": "Physics is the study of matter, energy, space, time, and the fundamental laws that describe nature.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is matter?",
+    "answer": "Matter is anything that has mass and occupies space. It is made of atoms and other particles.",
+    "source": "original"
+  },
+  {
+    "prompt": "What are atoms?",
+    "answer": "Atoms are the basic units of ordinary matter. They contain a nucleus surrounded by electrons.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is energy?",
+    "answer": "Energy is the capacity to cause change or perform work. It can exist in many forms, such as kinetic, thermal, chemical, and electromagnetic energy.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is gravity?",
+    "answer": "Gravity is a fundamental interaction between objects with mass. It causes objects to attract one another.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a star?",
+    "answer": "A star is a massive astronomical object made mainly of hot plasma that produces energy through nuclear fusion.",
+    "source": "original"
+  },
+  {
+    "prompt": "How do stars form?",
+    "answer": "Stars form when clouds of gas and dust collapse under gravity until their centers become hot and dense enough for nuclear fusion to begin.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the universe?",
+    "answer": "The universe contains all known space, time, matter, energy, galaxies, stars, planets, and other physical structures.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a galaxy?",
+    "answer": "A galaxy is a large system of stars, gas, dust, dark matter, and other objects held together by gravity.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a planet?",
+    "answer": "A planet is a large astronomical body that orbits a star and has enough gravity to become approximately spherical.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a black hole?",
+    "answer": "A black hole is a region of spacetime where gravity is extremely strong and from which nothing can escape once it passes the event horizon.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an event horizon?",
+    "answer": "An event horizon is the boundary around a black hole beyond which escape from the black hole is impossible.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is spacetime?",
+    "answer": "Spacetime is the four-dimensional combination of three spatial dimensions and time used to describe physical events.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is mathematics?",
+    "answer": "Mathematics is a formal language used to study quantities, structures, patterns, relationships, and logical reasoning.",
+    "source": "original"
+  },
+  {
+    "prompt": "Why is mathematics important in physics?",
+    "answer": "Mathematics provides a precise language for expressing physical laws, building models, and making quantitative predictions.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is artificial intelligence?",
+    "answer": "Artificial intelligence is a field of computing that develops systems capable of performing tasks that normally require aspects of human intelligence.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "answer": "Machine learning is a method that allows computer systems to learn patterns from data and use those patterns to make predictions or decisions.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is deep learning?",
+    "answer": "Deep learning is a branch of machine learning that uses neural networks with multiple layers to learn complex patterns from data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a neural network?",
+    "answer": "A neural network is a computational model composed of interconnected artificial neurons that can learn patterns from data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a transformer?",
+    "answer": "A transformer is a neural network architecture based on attention mechanisms that can process relationships between tokens in a sequence.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is attention in a transformer?",
+    "answer": "Attention allows a transformer to determine which parts of a sequence are important when processing each token.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a language model?",
+    "answer": "A language model is a machine learning model that learns patterns in language and predicts likely sequences of tokens.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a chatbot?",
+    "answer": "A chatbot is a software system that communicates with users through natural language and generates responses to their messages.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is data?",
+    "answer": "Data is information that can be collected, stored, processed, and analyzed by computers or other systems.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an algorithm?",
+    "answer": "An algorithm is a step-by-step procedure for solving a problem or completing a computational task.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is computer science?",
+    "answer": "Computer science is the study of computation, algorithms, programming, software, data, and computer systems.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is programming?",
+    "answer": "Programming is the process of writing instructions that a computer can execute to perform specific tasks.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is Python?",
+    "answer": "Python is a general-purpose programming language known for its readable syntax and wide use in scientific computing, artificial intelligence, and software development.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a database?",
+    "answer": "A database is an organized collection of information that can be stored, searched, updated, and managed by computer systems.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a neural network used for?",
+    "answer": "Neural networks can be used for tasks such as classification, prediction, pattern recognition, language processing, and image analysis.",
+    "source": "original"
+  },
+  {
+    "prompt": "How does machine learning work?",
+    "answer": "Machine learning works by training a model on data so that it can learn statistical patterns and use those patterns to make predictions on new data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is training in machine learning?",
+    "answer": "Training is the process of adjusting a machine learning model's parameters so that its predictions become better on the training data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a dataset?",
+    "answer": "A dataset is a collection of examples or observations used for analysis, training, validation, or testing.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a training dataset?",
+    "answer": "A training dataset is the portion of data used to teach a machine learning model its patterns and relationships.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a validation dataset?",
+    "answer": "A validation dataset is used during development to evaluate a model and help choose appropriate settings without using the final test set.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a test dataset?",
+    "answer": "A test dataset is a separate collection of examples used to measure how well a trained model performs on previously unseen data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an epoch?",
+    "answer": "An epoch is one complete pass through all training examples in a dataset.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a token?",
+    "answer": "A token is a unit of text processed by a language model. A token can represent a word, part of a word, punctuation mark, or other symbol.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a tokenizer?",
+    "answer": "A tokenizer converts text into tokens or token IDs that a language model can process.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is BPE?",
+    "answer": "Byte Pair Encoding is a tokenization method that builds tokens by repeatedly merging frequently occurring symbol pairs.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a transformer language model?",
+    "answer": "A transformer language model uses transformer layers to learn patterns in sequences of tokens and predict subsequent tokens.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is inference?",
+    "answer": "Inference is the process of using a trained machine learning model to produce predictions or generate outputs from new input.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is classical mechanics?",
+    "answer": "Classical mechanics is the branch of physics that describes the motion of macroscopic objects using concepts such as force, mass, momentum, and energy.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is Newton's first law?",
+    "answer": "Newton's first law states that an object remains at rest or moves with constant velocity unless acted upon by a net external force.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is Newton's second law?",
+    "answer": "Newton's second law states that the net force on an object equals its mass multiplied by its acceleration.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is Newton's third law?",
+    "answer": "Newton's third law states that when one object exerts a force on another object, the second object exerts an equal and opposite force on the first.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is velocity?",
+    "answer": "Velocity is the rate of change of position with respect to time and includes both magnitude and direction.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is acceleration?",
+    "answer": "Acceleration is the rate of change of velocity with respect to time.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is momentum?",
+    "answer": "Momentum is the product of an object's mass and velocity.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is kinetic energy?",
+    "answer": "Kinetic energy is the energy an object possesses because of its motion.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is potential energy?",
+    "answer": "Potential energy is stored energy associated with an object's position, configuration, or physical state.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is work in physics?",
+    "answer": "Work is the transfer of energy that occurs when a force causes displacement in the direction of the force.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is power in physics?",
+    "answer": "Power is the rate at which work is done or energy is transferred.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is temperature?",
+    "answer": "Temperature is a physical quantity related to the average thermal energy of particles in a system.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is heat?",
+    "answer": "Heat is energy transferred between systems because of a difference in temperature.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is electricity?",
+    "answer": "Electricity involves electric charge and phenomena associated with the movement and interaction of charged particles.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is electric charge?",
+    "answer": "Electric charge is a fundamental physical property that causes particles to experience electromagnetic interactions.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an electric field?",
+    "answer": "An electric field is a region around electric charges where other electric charges experience an electric force.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a magnetic field?",
+    "answer": "A magnetic field is a region of space where moving charges, electric currents, and magnetic materials can experience magnetic forces.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is electromagnetism?",
+    "answer": "Electromagnetism is the branch of physics that studies electric and magnetic fields and their interactions with charged matter.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is light?",
+    "answer": "Light is electromagnetic radiation that can propagate through space and can interact with matter.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the speed of light?",
+    "answer": "In vacuum, electromagnetic radiation travels at approximately 299792458 meters per second.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is quantum mechanics?",
+    "answer": "Quantum mechanics is the theory of physics that describes matter and energy at atomic and subatomic scales.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a quantum?",
+    "answer": "A quantum is a discrete unit of a physical quantity such as energy in quantum theory.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a photon?",
+    "answer": "A photon is a quantum of electromagnetic radiation and has zero rest mass.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is relativity?",
+    "answer": "Relativity is a theory of physics describing space, time, motion, and gravity, including special and general relativity.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is special relativity?",
+    "answer": "Special relativity describes physics in inertial reference frames and shows that measurements of space and time depend on relative motion.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is general relativity?",
+    "answer": "General relativity describes gravity as the curvature of spacetime caused by mass and energy.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is dark matter?",
+    "answer": "Dark matter is a form of matter inferred from its gravitational effects but not directly observed through electromagnetic radiation.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is dark energy?",
+    "answer": "Dark energy is the name given to the unknown component associated with the observed accelerated expansion of the universe.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a neutron star?",
+    "answer": "A neutron star is an extremely dense stellar remnant composed primarily of neutrons and produced by the collapse of a massive star.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a supernova?",
+    "answer": "A supernova is a powerful stellar explosion that can occur when a massive star reaches the end of its evolution or under certain other stellar conditions.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the Milky Way?",
+    "answer": "The Milky Way is the galaxy that contains our Solar System.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the Solar System?",
+    "answer": "The Solar System consists of the Sun and the objects that orbit it, including planets, dwarf planets, moons, asteroids, and comets.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an exoplanet?",
+    "answer": "An exoplanet is a planet that orbits a star outside our Solar System.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "answer": "Machine learning allows computer systems to learn patterns from data and use those patterns to make predictions or decisions.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is supervised learning?",
+    "answer": "Supervised learning trains a model using examples that contain both input data and corresponding target outputs.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is unsupervised learning?",
+    "answer": "Unsupervised learning finds patterns or structures in data without requiring labeled target outputs.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is reinforcement learning?",
+    "answer": "Reinforcement learning trains an agent to make decisions by receiving rewards or penalties from interactions with an environment.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is classification?",
+    "answer": "Classification is a machine learning task in which a model assigns an input to one or more predefined categories.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is regression?",
+    "answer": "Regression is a machine learning task in which a model predicts a numerical value.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is overfitting?",
+    "answer": "Overfitting occurs when a model learns the training data too closely and performs poorly on new unseen data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is underfitting?",
+    "answer": "Underfitting occurs when a model is too simple to capture important patterns in the training data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a feature?",
+    "answer": "A feature is an input variable or measurable property used by a machine learning model.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a label?",
+    "answer": "A label is the target value that a supervised learning model attempts to predict.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a loss function?",
+    "answer": "A loss function measures how different a model's predictions are from the desired target values.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is gradient descent?",
+    "answer": "Gradient descent is an optimization algorithm that updates model parameters in a direction that reduces the loss function.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a learning rate?",
+    "answer": "The learning rate controls the size of parameter updates made by an optimization algorithm during training.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an optimizer?",
+    "answer": "An optimizer is an algorithm that adjusts a model's parameters to reduce the training loss.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is backpropagation?",
+    "answer": "Backpropagation calculates gradients of the loss with respect to model parameters so that the parameters can be updated during training.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a hyperparameter?",
+    "answer": "A hyperparameter is a configuration value chosen before or during training rather than learned directly from the training data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is natural language processing?",
+    "answer": "Natural language processing is a field of artificial intelligence concerned with enabling computers to process and generate human language.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is generative AI?",
+    "answer": "Generative AI refers to models that can create new content such as text, images, audio, video, or code.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an LLM?",
+    "answer": "An LLM is a large language model trained on large amounts of text to learn patterns in language and generate text.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a context window?",
+    "answer": "A context window is the maximum amount of tokenized information that a language model can consider at one time.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an embedding?",
+    "answer": "An embedding is a numerical vector representation of data that allows a model to represent semantic or structural relationships.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is self-attention?",
+    "answer": "Self-attention allows each token in a sequence to use information from other tokens in the same sequence.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is multi-head attention?",
+    "answer": "Multi-head attention performs several attention operations in parallel so a model can learn different relationships between tokens.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a positional encoding?",
+    "answer": "Positional encoding provides information about the position or order of tokens in a sequence.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a transformer block?",
+    "answer": "A transformer block typically combines self-attention, normalization, and a feed-forward network to process token representations.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a feed-forward network?",
+    "answer": "A feed-forward network transforms each token representation through a sequence of learned linear and nonlinear operations.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an activation function?",
+    "answer": "An activation function introduces nonlinear behavior into a neural network so it can learn complex relationships.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is GELU?",
+    "answer": "GELU is a smooth nonlinear activation function commonly used in transformer neural networks.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is layer normalization?",
+    "answer": "Layer normalization normalizes neural network activations across features to improve training stability.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a parameter in a neural network?",
+    "answer": "A parameter is a learned numerical value in a neural network, such as a weight or bias.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a model checkpoint?",
+    "answer": "A model checkpoint is a saved copy of a model's learned parameters and training state.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an epoch in neural network training?",
+    "answer": "An epoch is one complete pass through the available training dataset.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a batch?",
+    "answer": "A batch is a group of training examples processed together during one training step.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is batch size?",
+    "answer": "Batch size is the number of training examples processed together in one batch.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a tokenizer vocabulary?",
+    "answer": "A tokenizer vocabulary is the collection of tokens that the tokenizer maps to numerical token IDs.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an unknown token?",
+    "answer": "An unknown token represents text that the tokenizer cannot map to one of its known vocabulary tokens.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is BPE tokenization?",
+    "answer": "BPE tokenization builds a vocabulary by repeatedly merging frequently occurring symbol pairs into larger tokens.",
+    "source": "original"
+  },
+  {
+    "prompt": "Why do language models use tokens?",
+    "answer": "Language models use tokens because converting text into discrete numerical units makes language suitable for neural network processing.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is PyTorch?",
+    "answer": "PyTorch is an open-source machine learning framework widely used for building and training neural networks.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is Python used for in AI?",
+    "answer": "Python is widely used in AI for data processing, machine learning, deep learning, experimentation, and software development.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an API?",
+    "answer": "An API is an interface that allows different software components to communicate with each other using defined operations and data formats.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is FastAPI?",
+    "answer": "FastAPI is a Python web framework for building high-performance APIs using Python type hints.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a backend?",
+    "answer": "A backend is the server-side part of an application responsible for processing requests, managing data, and providing services.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a frontend?",
+    "answer": "A frontend is the part of an application that users interact with directly.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a database?",
+    "answer": "A database is an organized system for storing, retrieving, and managing information.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is SQL?",
+    "answer": "SQL is a language used to create, query, update, and manage data in relational databases.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is software engineering?",
+    "answer": "Software engineering is the systematic process of designing, developing, testing, maintaining, and improving software systems.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an operating system?",
+    "answer": "An operating system is system software that manages computer hardware and provides services for applications.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an algorithm?",
+    "answer": "An algorithm is a finite sequence of well-defined steps used to solve a problem or perform a computation.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is computational complexity?",
+    "answer": "Computational complexity studies how the time or memory requirements of an algorithm grow as the input size increases.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a data structure?",
+    "answer": "A data structure is a method of organizing and storing data so that it can be accessed and modified efficiently.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a graph in computer science?",
+    "answer": "A graph is a data structure consisting of vertices and edges used to represent relationships between objects.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a tree in computer science?",
+    "answer": "A tree is a hierarchical data structure consisting of nodes connected by edges and organized from a root toward child nodes.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is recursion?",
+    "answer": "Recursion is a programming technique in which a function solves a problem by calling itself on smaller instances of the problem.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is debugging?",
+    "answer": "Debugging is the process of finding, understanding, and correcting errors in software.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a compiler?",
+    "answer": "A compiler translates source code written in a programming language into another form, often machine code or an intermediate representation.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an interpreter?",
+    "answer": "An interpreter executes or evaluates program instructions without first producing a complete standalone machine-code executable.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an array?",
+    "answer": "An array is a data structure that stores elements in an ordered collection and allows them to be accessed using indices.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a variable in programming?",
+    "answer": "A variable is a named reference to a value that a program can use and, in many languages, change during execution.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a function in programming?",
+    "answer": "A function is a reusable block of code designed to perform a specific operation.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an object-oriented programming language?",
+    "answer": "An object-oriented programming language organizes software around objects that contain data and behavior.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the Internet?",
+    "answer": "The Internet is a global network of interconnected computer networks that communicate using standardized protocols.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is HTTP?",
+    "answer": "HTTP is an application-layer protocol used for communication between clients and servers on the web.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is JSON?",
+    "answer": "JSON is a lightweight text format commonly used to represent and exchange structured data between software systems.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a web server?",
+    "answer": "A web server is software or a computer system that receives HTTP requests and returns web resources or responses.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is cybersecurity?",
+    "answer": "Cybersecurity is the practice of protecting computer systems, networks, applications, and data from unauthorized access and attacks.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is encryption?",
+    "answer": "Encryption transforms readable information into a protected form so that only authorized parties can recover the original information.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a password?",
+    "answer": "A password is a secret sequence of characters used to authenticate a user or protect access to a system.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is authentication?",
+    "answer": "Authentication is the process of verifying the identity of a user, device, or system.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is authorization?",
+    "answer": "Authorization determines which actions or resources an authenticated user is allowed to access.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a server?",
+    "answer": "A server is a computer or software system that provides data, resources, or services to other computers or applications.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is cloud computing?",
+    "answer": "Cloud computing provides computing resources such as storage, processing power, and software services over a network.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a virtual machine?",
+    "answer": "A virtual machine is a software-based computer that runs an operating system and applications using virtualized hardware resources.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an operating system kernel?",
+    "answer": "The kernel is the central part of an operating system that manages hardware resources and provides core services to applications.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is memory in a computer?",
+    "answer": "Computer memory stores data and instructions that the processor needs during computation.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a CPU?",
+    "answer": "A CPU is the central processing unit that executes instructions and performs calculations in a computer.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a GPU?",
+    "answer": "A GPU is a processor designed to perform many computations in parallel and is widely used for graphics and machine learning.",
+    "source": "original"
+  },
+  {
+    "prompt": "Why are GPUs useful for AI?",
+    "answer": "GPUs are useful for AI because their parallel processing capabilities can accelerate the matrix and tensor operations used by neural networks.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a tensor?",
+    "answer": "A tensor is a multidimensional numerical array commonly used to represent data and parameters in machine learning systems.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a matrix?",
+    "answer": "A matrix is a rectangular arrangement of numbers organized into rows and columns.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a vector?",
+    "answer": "A vector is an ordered collection of numerical values that can represent quantities, directions, or features.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is linear algebra?",
+    "answer": "Linear algebra is the branch of mathematics concerned with vectors, matrices, linear transformations, and systems of linear equations.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is calculus?",
+    "answer": "Calculus is the branch of mathematics that studies change, limits, derivatives, integrals, and continuous quantities.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a derivative?",
+    "answer": "A derivative measures how a quantity changes with respect to another quantity.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an integral?",
+    "answer": "An integral is a mathematical operation used to accumulate quantities and is closely related to area and antiderivatives.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is probability?",
+    "answer": "Probability is the mathematical framework used to describe uncertainty and quantify how likely events are to occur.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is statistics?",
+    "answer": "Statistics is the study of collecting, analyzing, interpreting, and presenting data.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a probability distribution?",
+    "answer": "A probability distribution describes how probabilities are assigned to the possible values of a random variable.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a random variable?",
+    "answer": "A random variable is a variable whose possible values are associated with outcomes of a random process.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is astronomy?",
+    "answer": "Astronomy is the scientific study of stars, planets, galaxies, cosmic structures, and other objects and phenomena in the universe.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is cosmology?",
+    "answer": "Cosmology is the scientific study of the origin, evolution, structure, and large-scale behavior of the universe.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the Big Bang theory?",
+    "answer": "The Big Bang theory describes the early hot, dense state of the universe and its subsequent expansion and evolution.",
+    "source": "original"
+  },
+  {
+    "prompt": "Is the universe expanding?",
+    "answer": "Yes. Observations show that the large-scale universe is expanding, with distant galaxies generally moving away from one another.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an asteroid?",
+    "answer": "An asteroid is a relatively small rocky or metallic object that orbits the Sun.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a comet?",
+    "answer": "A comet is a small Solar System body containing ice and dust that can develop a visible coma and tail when approaching the Sun.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a moon?",
+    "answer": "A moon is a natural satellite that orbits a planet, dwarf planet, or other astronomical body.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a telescope?",
+    "answer": "A telescope is an instrument that collects and magnifies electromagnetic radiation or other signals from distant objects for observation.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a satellite?",
+    "answer": "A satellite is an object that orbits another object in space. Satellites can be natural or artificial.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is space exploration?",
+    "answer": "Space exploration is the investigation of space using spacecraft, satellites, telescopes, robotic missions, and human missions.",
+    "source": "original"
+  },
+  {
+    "prompt": "Why is scientific evidence important?",
+    "answer": "Scientific evidence is important because it allows hypotheses and theories to be tested against observations and experiments.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is an experiment?",
+    "answer": "An experiment is a controlled investigation designed to test a hypothesis or study a phenomenon.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a scientific hypothesis?",
+    "answer": "A scientific hypothesis is a testable proposed explanation for an observation or phenomenon.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is a scientific theory?",
+    "answer": "A scientific theory is a well-supported explanatory framework based on extensive evidence and repeated testing.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is observation in science?",
+    "answer": "Observation is the systematic collection of information about phenomena using measurements, instruments, or the senses.",
+    "source": "original"
+  },
+  {
+    "prompt": "What is the scientific method?",
+    "answer": "The scientific method is a systematic approach involving observation, hypothesis formation, testing, analysis, and revision based on evidence.",
+    "source": "original"
+  }
+]

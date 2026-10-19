@@ -1,0 +1,83 @@
+[
+  {
+    "prompt": "Why does an object released near Earth's surface usually move downward?",
+    "answer": "Earth's gravitational field accelerates the object toward the planet's center."
+  },
+  {
+    "prompt": "What process supplies most of a normal star's energy?",
+    "answer": "Nuclear fusion in the stellar core releases energy by combining light atomic nuclei."
+  },
+  {
+    "prompt": "How can astronomers find evidence for a black hole even though light cannot escape it?",
+    "answer": "They can observe its effects on nearby matter, stars, radiation, and surrounding spacetime."
+  },
+  {
+    "prompt": "What is one major difference between a galaxy and a planetary system?",
+    "answer": "A galaxy contains enormous numbers of stars, while a planetary system centers on one star and its orbiting bodies."
+  },
+  {
+    "prompt": "What does self-attention allow a transformer to determine?",
+    "answer": "It lets the model weigh relationships between different tokens when processing a sequence."
+  },
+  {
+    "prompt": "Why are embeddings used in language models?",
+    "answer": "Embeddings represent discrete tokens as numerical vectors that neural networks can process."
+  },
+  {
+    "prompt": "How does supervised learning differ from unsupervised learning?",
+    "answer": "Supervised learning uses labeled examples, whereas unsupervised learning discovers patterns without target labels."
+  },
+  {
+    "prompt": "What is a typical sign that a machine-learning model is overfitting?",
+    "answer": "It performs very well on training data but gives noticeably poorer results on unseen data."
+  },
+  {
+    "prompt": "Why is validation data separated from training data?",
+    "answer": "Validation data helps measure generalization and guide model choices without directly training the model on those examples."
+  },
+  {
+    "prompt": "What is the purpose of an optimizer during neural-network training?",
+    "answer": "An optimizer changes model parameters using gradients so that the training loss can decrease."
+  },
+  {
+    "prompt": "Why are GPUs useful for training neural networks?",
+    "answer": "GPUs can perform many numerical operations in parallel, making large tensor computations faster."
+  },
+  {
+    "prompt": "What is the main purpose of an API in software?",
+    "answer": "An API provides a defined interface through which different software components can communicate."
+  },
+  {
+    "prompt": "How does a compiler differ from an interpreter?",
+    "answer": "A compiler translates code into another form before execution, while an interpreter executes instructions through a runtime process."
+  },
+  {
+    "prompt": "Why are data structures important in programming?",
+    "answer": "They organize information so programs can store, access, and modify data efficiently."
+  },
+  {
+    "prompt": "What does a derivative tell us about a function?",
+    "answer": "A derivative describes how rapidly the function changes with respect to its input."
+  },
+  {
+    "prompt": "What does a probability distribution describe?",
+    "answer": "It specifies how likely different possible values or outcomes of a random variable are."
+  },
+  {
+    "prompt": "Does cosmic expansion mean that atoms inside ordinary objects are continually stretching?",
+    "answer": "No. Local forces such as electromagnetism and gravity keep ordinary bound systems together."
+  },
+  {
+    "prompt": "What is a useful distinction between an asteroid and a comet?",
+    "answer": "Asteroids are generally rocky or metallic bodies, while comets contain substantial volatile material that can produce a coma near the Sun."
+  },
+  {
+    "prompt": "Why must a scientific hypothesis be testable?",
+    "answer": "A testable hypothesis makes predictions that observations or experiments can potentially support or contradict."
+  },
+  {
+    "prompt": "What role does a tokenizer play before text enters a language model?",
+    "answer": "It converts text into discrete token identifiers that the model can transform into numerical representations."
+  }
+]
+  

@@ -1,0 +1,337 @@
+[
+  {
+    "prompt": "What happens to an object's velocity when a net force acts on it?",
+    "answer": "A net force causes acceleration, so the object's velocity changes in magnitude or direction."
+  },
+  {
+    "prompt": "How does a net force affect the motion of an object?",
+    "answer": "A net force causes an object to accelerate, changing its velocity."
+  },
+  {
+    "prompt": "Why can a net force change an object's velocity?",
+    "answer": "A net force produces acceleration, and acceleration is the rate of change of velocity."
+  },
+  {
+    "prompt": "What is the relationship between force and acceleration?",
+    "answer": "For a given mass, greater net force produces greater acceleration."
+  },
+  {
+    "prompt": "Can a net force change only the direction of velocity?",
+    "answer": "Yes. A force perpendicular to velocity can change its direction without changing its speed."
+  },
+
+  {
+    "prompt": "How are kinetic energy and potential energy different?",
+    "answer": "Kinetic energy comes from motion, while potential energy is stored because of position or configuration."
+  },
+  {
+    "prompt": "What determines an object's kinetic energy?",
+    "answer": "Kinetic energy depends on the object's mass and the square of its speed."
+  },
+  {
+    "prompt": "What is an example of potential energy?",
+    "answer": "An elevated object has gravitational potential energy because of its position."
+  },
+  {
+    "prompt": "Can potential energy become kinetic energy?",
+    "answer": "Yes. For example, gravitational potential energy can become kinetic energy as an object falls."
+  },
+  {
+    "prompt": "Why does a moving object have kinetic energy?",
+    "answer": "Kinetic energy is the energy associated with an object's motion."
+  },
+
+  {
+    "prompt": "Why is the event horizon important in a black hole?",
+    "answer": "It marks the boundary beyond which escape from the black hole is impossible."
+  },
+  {
+    "prompt": "What happens when something crosses a black hole's event horizon?",
+    "answer": "After crossing the event horizon, it cannot escape back to the outside universe."
+  },
+  {
+    "prompt": "Why can't light escape from inside an event horizon?",
+    "answer": "The spacetime geometry inside the horizon prevents even light from reaching the outside."
+  },
+  {
+    "prompt": "Is the event horizon a physical surface?",
+    "answer": "No. It is a boundary in spacetime, not a solid physical surface."
+  },
+  {
+    "prompt": "How is an event horizon related to a black hole?",
+    "answer": "The event horizon surrounds a black hole and defines the boundary of no return."
+  },
+
+  {
+    "prompt": "What is the relationship between wavelength and frequency for light in vacuum?",
+    "answer": "They are inversely related: as wavelength increases, frequency decreases."
+  },
+  {
+    "prompt": "What happens to the frequency of light when its wavelength increases in vacuum?",
+    "answer": "Its frequency decreases because the speed of light remains constant in vacuum."
+  },
+  {
+    "prompt": "Why do wavelength and frequency have an inverse relationship?",
+    "answer": "Because their product equals the constant speed of light in vacuum."
+  },
+  {
+    "prompt": "Does the speed of light in vacuum depend on wavelength?",
+    "answer": "No. Light of different wavelengths travels at the same speed in vacuum."
+  },
+  {
+    "prompt": "What happens to wavelength if the frequency of light doubles in vacuum?",
+    "answer": "The wavelength becomes half as large because the speed of light is constant."
+  },
+
+  {
+    "prompt": "What is the main idea behind deep learning?",
+    "answer": "Deep learning uses multilayer neural networks to learn increasingly complex patterns from data."
+  },
+  {
+    "prompt": "Why are multiple layers useful in deep learning?",
+    "answer": "Different layers can learn increasingly complex representations of the input data."
+  },
+  {
+    "prompt": "How does deep learning differ from traditional machine learning?",
+    "answer": "Deep learning uses multilayer neural networks that can automatically learn complex features."
+  },
+  {
+    "prompt": "What kind of problems can deep learning solve?",
+    "answer": "It can learn complex patterns for tasks such as vision, language processing, and prediction."
+  },
+  {
+    "prompt": "Why does deep learning require substantial data?",
+    "answer": "Large neural networks often need many examples to learn useful patterns without overfitting."
+  },
+
+  {
+    "prompt": "What does a classification model predict?",
+    "answer": "A classification model predicts a category or class for an input."
+  },
+  {
+    "prompt": "What is an example of classification?",
+    "answer": "Classifying an email as spam or not spam is a classification task."
+  },
+  {
+    "prompt": "How is classification different from regression?",
+    "answer": "Classification predicts categories, while regression predicts numerical values."
+  },
+  {
+    "prompt": "Can classification have more than two classes?",
+    "answer": "Yes. A classification problem can have two or many possible classes."
+  },
+  {
+    "prompt": "What does a binary classification model predict?",
+    "answer": "It predicts one of two possible classes."
+  },
+
+  {
+    "prompt": "What does regression generally try to predict?",
+    "answer": "Regression predicts a continuous numerical value."
+  },
+  {
+    "prompt": "What is an example of regression?",
+    "answer": "Predicting the price of a house from its features is a regression task."
+  },
+  {
+    "prompt": "How is regression different from classification?",
+    "answer": "Regression predicts numerical values, whereas classification predicts categories."
+  },
+  {
+    "prompt": "Why is regression useful for prediction?",
+    "answer": "It allows a model to estimate continuous quantities from input features."
+  },
+  {
+    "prompt": "Can regression predict a category?",
+    "answer": "Generally no. Regression is designed to predict continuous numerical values."
+  },
+
+  {
+    "prompt": "Why is a loss function needed when training a neural network?",
+    "answer": "It measures how different the model's predictions are from the desired targets."
+  },
+  {
+    "prompt": "What does a loss function tell a neural network?",
+    "answer": "It provides a numerical measure of prediction error that training seeks to reduce."
+  },
+  {
+    "prompt": "Why does training try to minimize loss?",
+    "answer": "Lower loss generally means the model's predictions are closer to the target values."
+  },
+  {
+    "prompt": "How is loss used during neural network training?",
+    "answer": "The loss is used to calculate gradients that guide parameter updates."
+  },
+  {
+    "prompt": "What happens when a neural network has high loss?",
+    "answer": "Its predictions differ substantially from the desired targets according to the chosen loss function."
+  },
+
+  {
+    "prompt": "What does the learning rate control during optimization?",
+    "answer": "It controls the size of parameter updates during optimization."
+  },
+  {
+    "prompt": "What happens if the learning rate is too large?",
+    "answer": "Training can become unstable or overshoot useful parameter values."
+  },
+  {
+    "prompt": "What happens if the learning rate is too small?",
+    "answer": "Training may become very slow and require many updates to converge."
+  },
+  {
+    "prompt": "Why is the learning rate important in neural network training?",
+    "answer": "It strongly affects how quickly and reliably the model learns."
+  },
+  {
+    "prompt": "Is the learning rate a model parameter learned from data?",
+    "answer": "No. It is usually a hyperparameter selected by the practitioner."
+  },
+
+  {
+    "prompt": "Why does a transformer need positional information?",
+    "answer": "Positional information tells the transformer where tokens occur in the sequence."
+  },
+  {
+    "prompt": "What problem does positional encoding solve?",
+    "answer": "It provides information about token order because self-attention alone does not inherently encode sequence order."
+  },
+  {
+    "prompt": "What would happen if a transformer had no positional information?",
+    "answer": "The model would have difficulty distinguishing different token orders."
+  },
+  {
+    "prompt": "How does positional information help language models?",
+    "answer": "It allows the model to use the order and position of tokens when interpreting a sequence."
+  },
+  {
+    "prompt": "Is positional information part of a transformer's input representation?",
+    "answer": "Yes. It is combined with token representations so the model can use sequence position."
+  },
+
+  {
+    "prompt": "What is the purpose of a context window in a language model?",
+    "answer": "It defines how much input context the model can process at one time."
+  },
+  {
+    "prompt": "Why does a language model have a context window?",
+    "answer": "The model has a finite amount of sequence context that it can process in one operation."
+  },
+  {
+    "prompt": "What happens when text exceeds a model's context window?",
+    "answer": "Some earlier or later tokens must be omitted or handled separately."
+  },
+  {
+    "prompt": "Why is a larger context window useful?",
+    "answer": "It allows the model to consider more surrounding information when generating an answer."
+  },
+  {
+    "prompt": "Does a context window determine the model's vocabulary size?",
+    "answer": "No. Context length determines sequence capacity, while vocabulary size determines available tokens."
+  },
+
+  {
+    "prompt": "What is an HTTP request used for?",
+    "answer": "An HTTP request is used by a client to communicate with a web server."
+  },
+  {
+    "prompt": "How does a browser use HTTP?",
+    "answer": "A browser sends HTTP requests to servers to retrieve or send web resources."
+  },
+  {
+    "prompt": "What can an HTTP request contain?",
+    "answer": "It can contain a method, URL, headers, and sometimes a request body."
+  },
+  {
+    "prompt": "What is the difference between an HTTP request and response?",
+    "answer": "The request is sent by the client, while the response is returned by the server."
+  },
+  {
+    "prompt": "Why are HTTP methods used?",
+    "answer": "They indicate the intended operation, such as retrieving, creating, updating, or deleting data."
+  },
+
+  {
+    "prompt": "Why is JSON commonly used between frontend and backend systems?",
+    "answer": "JSON is lightweight, human-readable, and supported by many programming languages."
+  },
+  {
+    "prompt": "How does a frontend use JSON when communicating with a backend?",
+    "answer": "The frontend can send and receive structured data encoded as JSON."
+  },
+  {
+    "prompt": "Why is JSON useful for APIs?",
+    "answer": "It provides a simple standard format for exchanging structured data."
+  },
+  {
+    "prompt": "Can JSON represent structured data?",
+    "answer": "Yes. JSON can represent objects, arrays, strings, numbers, booleans, and null values."
+  },
+  {
+    "prompt": "Is JSON a programming language?",
+    "answer": "No. JSON is a data interchange format."
+  },
+
+  {
+    "prompt": "Why is linear algebra important in artificial intelligence?",
+    "answer": "Linear algebra provides mathematical tools for representing and transforming data and model parameters."
+  },
+  {
+    "prompt": "How are vectors used in artificial intelligence?",
+    "answer": "Vectors can represent features, data points, embeddings, and model parameters."
+  },
+  {
+    "prompt": "Why are matrices important in neural networks?",
+    "answer": "Matrices efficiently represent many parameter transformations used in neural network computations."
+  },
+  {
+    "prompt": "What role do vectors and matrices play in machine learning?",
+    "answer": "They provide compact mathematical representations for data and numerical operations."
+  },
+  {
+    "prompt": "Why do AI models use mathematical operations from linear algebra?",
+    "answer": "They allow models to efficiently transform and combine numerical representations."
+  },
+
+  {
+    "prompt": "What does an integral generally represent?",
+    "answer": "An integral represents accumulated quantity and can be interpreted as area under a curve in many cases."
+  },
+  {
+    "prompt": "How is an integral related to accumulation?",
+    "answer": "Integration combines infinitesimal contributions to determine a total accumulated quantity."
+  },
+  {
+    "prompt": "How is an integral related to a derivative?",
+    "answer": "Integration and differentiation are closely related through the fundamental theorem of calculus."
+  },
+  {
+    "prompt": "What can a definite integral calculate?",
+    "answer": "A definite integral can calculate accumulated quantities such as the signed area under a curve."
+  },
+  {
+    "prompt": "Why are integrals useful in physics?",
+    "answer": "Integrals allow physical quantities to be accumulated over space, time, or other variables."
+  },
+
+  {
+    "prompt": "Why is experimental evidence important in science?",
+    "answer": "Experimental evidence tests scientific ideas against observations and helps determine whether predictions are supported."
+  },
+  {
+    "prompt": "How does experimental evidence support a scientific hypothesis?",
+    "answer": "Experiments produce observations that can support, challenge, or refine the hypothesis."
+  },
+  {
+    "prompt": "Can experimental evidence prove every scientific theory with absolute certainty?",
+    "answer": "No. Scientific evidence can strongly support theories, but scientific conclusions remain open to revision."
+  },
+  {
+    "prompt": "Why must scientific claims be tested?",
+    "answer": "Testing allows scientific claims to be compared with observations and evidence."
+  },
+  {
+    "prompt": "What makes experimental evidence useful?",
+    "answer": "Useful evidence is obtained through systematic observations or experiments that can be evaluated and reproduced."
+  }
+]

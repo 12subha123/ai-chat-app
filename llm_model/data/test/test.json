@@ -1,0 +1,82 @@
+[
+  {
+    "prompt": "What happens to an object's velocity when a net force acts on it?",
+    "answer": "A net force causes the object's velocity to change by producing acceleration."
+  },
+  {
+    "prompt": "How are kinetic energy and potential energy different?",
+    "answer": "Kinetic energy is associated with motion, while potential energy comes from an object's position or configuration."
+  },
+  {
+    "prompt": "Why is the event horizon important in a black hole?",
+    "answer": "It marks the boundary beyond which signals or light cannot escape to a distant observer."
+  },
+  {
+    "prompt": "What is the relationship between wavelength and frequency for light in vacuum?",
+    "answer": "They are inversely related because their product equals the speed of light."
+  },
+  {
+    "prompt": "Why do scientists use models when studying the universe?",
+    "answer": "Models provide simplified mathematical or conceptual descriptions that can be compared with observations."
+  },
+  {
+    "prompt": "What is the main idea behind deep learning?",
+    "answer": "Deep learning uses neural networks with multiple layers to learn increasingly complex patterns from data."
+  },
+  {
+    "prompt": "What does a classification model predict?",
+    "answer": "It assigns an input to one or more predefined categories."
+  },
+  {
+    "prompt": "What does regression generally try to predict?",
+    "answer": "Regression estimates a numerical quantity from one or more input features."
+  },
+  {
+    "prompt": "Why is a loss function needed when training a neural network?",
+    "answer": "It measures the difference between the model's predictions and desired targets."
+  },
+  {
+    "prompt": "What is backpropagation used for?",
+    "answer": "Backpropagation calculates gradients of the loss with respect to the model's parameters."
+  },
+  {
+    "prompt": "What does the learning rate control during optimization?",
+    "answer": "It controls how large the parameter updates are during each optimization step."
+  },
+  {
+    "prompt": "Why does a transformer need positional information?",
+    "answer": "Positional information tells the model about the order of tokens in the sequence."
+  },
+  {
+    "prompt": "What is the purpose of a context window in a language model?",
+    "answer": "It defines how much preceding token information the model can consider at once."
+  },
+  {
+    "prompt": "What is an HTTP request used for?",
+    "answer": "It allows a client to request or send information to a server over the web."
+  },
+  {
+    "prompt": "Why is JSON commonly used between frontend and backend systems?",
+    "answer": "JSON provides a simple structured text format for exchanging data between applications."
+  },
+  {
+    "prompt": "What is authentication?",
+    "answer": "Authentication verifies the identity of a user or system."
+  },
+  {
+    "prompt": "What is authorization?",
+    "answer": "Authorization determines which resources or actions an authenticated user is permitted to access."
+  },
+  {
+    "prompt": "Why is linear algebra important in artificial intelligence?",
+    "answer": "Vectors and matrices provide the mathematical structure used for many neural-network computations."
+  },
+  {
+    "prompt": "What does an integral generally represent?",
+    "answer": "An integral can represent accumulated quantity, such as area, over a specified interval."
+  },
+  {
+    "prompt": "Why is experimental evidence important in science?",
+    "answer": "Evidence allows scientific explanations and predictions to be checked against observations of the real world."
+  }
+]

@@ -1,0 +1,81 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Databases
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+# =========================
+# Node / React
+# =========================
+
+node_modules/
+frontend/build/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS / Editor
+# =========================
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Python tooling
+# =========================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Model-generated files
+# =========================
+
+llm_model/checkpoints/
+llm_model/checkpoints_expanded_260/
+llm_model/checkpoints_expanded_320/
+
+# =========================
+# Temporary / generated data
+# =========================
+
+*.tmp
+*.temp
+*.bak

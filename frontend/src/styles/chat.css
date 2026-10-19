@@ -1,0 +1,15 @@
+.chat-container {
+  margin-left: 260px;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.chat-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-content {
+  max-width: 900px;
+  margin: 30px auto;
+}

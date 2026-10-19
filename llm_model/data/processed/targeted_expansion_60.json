@@ -1,0 +1,242 @@
+[
+  {
+    "prompt": "Why does gravity make a released object accelerate toward Earth?",
+    "answer": "Earth's gravitational field attracts the object toward Earth's center, causing it to accelerate downward."
+  },
+  {
+    "prompt": "What causes a dropped object near Earth to accelerate downward?",
+    "answer": "Earth's gravitational field exerts an attractive force on the object toward the planet's center."
+  },
+  {
+    "prompt": "What does Earth's gravity do to a freely released object?",
+    "answer": "It accelerates the object toward Earth's center, so the object normally moves downward."
+  },
+  {
+    "prompt": "How does a normal star generate most of its energy?",
+    "answer": "Nuclear fusion in the stellar core releases energy by combining light atomic nuclei."
+  },
+  {
+    "prompt": "What happens during fusion inside an ordinary star?",
+    "answer": "Light atomic nuclei combine in the stellar core and release energy."
+  },
+  {
+    "prompt": "Why can nuclear fusion power a normal star?",
+    "answer": "Fusion converts a small amount of mass into energy when light nuclei combine under extreme conditions."
+  },
+  {
+    "prompt": "How can scientists detect a black hole without seeing the black hole itself?",
+    "answer": "They can observe its effects on nearby matter, stars, radiation, and spacetime."
+  },
+  {
+    "prompt": "What observations can reveal the presence of a black hole?",
+    "answer": "Scientists can study stellar motion, accretion radiation, and gravitational effects."
+  },
+  {
+    "prompt": "How can astronomers infer that an invisible compact object is a black hole?",
+    "answer": "They can measure its gravitational influence and energetic effects on surrounding matter."
+  },
+  {
+    "prompt": "How is a galaxy different from a planetary system?",
+    "answer": "A galaxy contains enormous numbers of stars, while a planetary system centers on one star."
+  },
+  {
+    "prompt": "What is the main structural difference between a galaxy and a solar system?",
+    "answer": "A galaxy contains many stars, while a solar system contains one star and orbiting objects."
+  },
+  {
+    "prompt": "Does a planetary system contain as many stars as a galaxy?",
+    "answer": "No. A planetary system normally has one central star, while a galaxy contains enormous numbers of stars."
+  },
+  {
+    "prompt": "What does self-attention help a transformer learn about a sequence?",
+    "answer": "It helps the model weigh relationships between different tokens in the sequence."
+  },
+  {
+    "prompt": "Why is self-attention useful in transformers?",
+    "answer": "It allows each token to use information from other relevant tokens in the sequence."
+  },
+  {
+    "prompt": "How does self-attention connect tokens in a transformer?",
+    "answer": "Attention weights determine how strongly each token relates to other tokens."
+  },
+  {
+    "prompt": "Why does a language model convert tokens into embeddings?",
+    "answer": "Embeddings convert discrete tokens into numerical vectors that a neural network can process."
+  },
+  {
+    "prompt": "What information do embeddings provide to a neural network?",
+    "answer": "They provide numerical vector representations of discrete tokens."
+  },
+  {
+    "prompt": "How do embeddings make words usable by a neural network?",
+    "answer": "They convert discrete tokens into numerical vector representations."
+  },
+  {
+    "prompt": "What is the key difference between supervised and unsupervised learning?",
+    "answer": "Supervised learning uses labeled examples, while unsupervised learning discovers patterns without target labels."
+  },
+  {
+    "prompt": "How does labeled training differ from unsupervised learning?",
+    "answer": "Labeled training provides target answers, while unsupervised learning does not provide target labels."
+  },
+  {
+    "prompt": "What kind of information does supervised learning require?",
+    "answer": "It requires examples paired with target labels or values."
+  },
+  {
+    "prompt": "How can you tell that a machine-learning model is overfitting?",
+    "answer": "The model performs very well on training data but performs worse on unseen data."
+  },
+  {
+    "prompt": "What is a common symptom of overfitting?",
+    "answer": "Excellent training performance combined with poor validation or test performance."
+  },
+  {
+    "prompt": "Why is a large gap between training and validation performance a warning sign?",
+    "answer": "It can indicate that the model is memorizing training examples instead of generalizing."
+  },
+  {
+    "prompt": "Why should validation examples not be used directly for model training?",
+    "answer": "They should measure generalization and guide model choices without being directly used to update parameters."
+  },
+  {
+    "prompt": "What is validation data used for during machine-learning development?",
+    "answer": "It evaluates generalization and helps guide model and hyperparameter choices."
+  },
+  {
+    "prompt": "How is validation data different from training data?",
+    "answer": "Training data updates model parameters, while validation data evaluates the model without directly updating them."
+  },
+  {
+    "prompt": "How does an optimizer help train a neural network?",
+    "answer": "It changes model parameters using gradients to reduce the training loss."
+  },
+  {
+    "prompt": "What does an optimizer do with gradients during training?",
+    "answer": "It uses gradients to calculate parameter updates."
+  },
+  {
+    "prompt": "Why is an optimizer necessary for neural-network training?",
+    "answer": "It provides a method for updating model parameters to reduce the loss."
+  },
+  {
+    "prompt": "Why are GPUs effective for neural-network training?",
+    "answer": "GPUs perform many numerical operations in parallel, making tensor computations faster."
+  },
+  {
+    "prompt": "What makes a GPU useful for deep-learning computation?",
+    "answer": "Its parallel hardware can perform many mathematical operations simultaneously."
+  },
+  {
+    "prompt": "How do GPUs speed up neural-network calculations?",
+    "answer": "They perform matrix and tensor operations in parallel."
+  },
+  {
+    "prompt": "What does an API provide to different software components?",
+    "answer": "An API provides a defined interface that allows software components to communicate."
+  },
+  {
+    "prompt": "Why are APIs important in software systems?",
+    "answer": "They define how software components make requests and exchange data or services."
+  },
+  {
+    "prompt": "How does an API allow two software systems to communicate?",
+    "answer": "It provides defined rules and interfaces for requesting services or exchanging data."
+  },
+  {
+    "prompt": "What is the difference between compiling and interpreting code?",
+    "answer": "A compiler translates code before execution, while an interpreter processes and executes it through a runtime."
+  },
+  {
+    "prompt": "How does a compiler process a program?",
+    "answer": "A compiler translates the program into another form before it is executed."
+  },
+  {
+    "prompt": "How does an interpreter execute a program?",
+    "answer": "An interpreter processes and executes program instructions through a runtime environment."
+  },
+  {
+    "prompt": "Why are data structures important in computer programs?",
+    "answer": "They organize information so programs can store, access, and modify data efficiently."
+  },
+  {
+    "prompt": "What problem do data structures solve?",
+    "answer": "They provide organized ways to store and work with information."
+  },
+  {
+    "prompt": "How can choosing a data structure affect a program?",
+    "answer": "The choice can affect how efficiently data is stored, accessed, and modified."
+  },
+  {
+    "prompt": "What does a derivative measure about a function?",
+    "answer": "A derivative measures the instantaneous rate of change of a function."
+  },
+  {
+    "prompt": "Why is a derivative useful for understanding a function?",
+    "answer": "It describes how the function changes at a particular point."
+  },
+  {
+    "prompt": "How can a derivative describe motion?",
+    "answer": "The derivative of position with respect to time gives velocity."
+  },
+  {
+    "prompt": "What information does a probability distribution give?",
+    "answer": "It describes the likelihood associated with possible outcomes or values."
+  },
+  {
+    "prompt": "What does a probability distribution describe about random outcomes?",
+    "answer": "It assigns probabilities to possible values or outcomes of a random variable."
+  },
+  {
+    "prompt": "Why are probability distributions useful?",
+    "answer": "They provide a mathematical description of how likely different outcomes are."
+  },
+  {
+    "prompt": "Does the expansion of the universe stretch atoms inside everyday objects?",
+    "answer": "No. Local forces such as electromagnetic forces keep atoms and ordinary objects bound together."
+  },
+  {
+    "prompt": "Why do ordinary objects not expand along with cosmic expansion?",
+    "answer": "Local electromagnetic and gravitational forces strongly bind the structures inside ordinary objects."
+  },
+  {
+    "prompt": "Does cosmic expansion continuously increase the size of atoms?",
+    "answer": "No. Local forces bind atoms and prevent ordinary atomic structures from expanding with cosmic space."
+  },
+  {
+    "prompt": "What is a basic difference between asteroids and comets?",
+    "answer": "Asteroids are mainly rocky or metallic, while comets contain significant volatile material."
+  },
+  {
+    "prompt": "Why can comets develop a coma near the Sun?",
+    "answer": "Solar heating causes volatile materials in the comet to escape and form a surrounding coma."
+  },
+  {
+    "prompt": "How do asteroids and comets differ in composition?",
+    "answer": "Asteroids are mainly rocky or metallic, while comets contain more volatile icy material."
+  },
+  {
+    "prompt": "Why must a scientific hypothesis make testable predictions?",
+    "answer": "Testable predictions allow observations or experiments to support or contradict the hypothesis."
+  },
+  {
+    "prompt": "What makes a scientific hypothesis testable?",
+    "answer": "It makes predictions that can be compared with observations or experimental results."
+  },
+  {
+    "prompt": "Why is testability important in science?",
+    "answer": "Testability allows evidence to support, challenge, or reject a scientific hypothesis."
+  },
+  {
+    "prompt": "What does a tokenizer do before text is processed by a language model?",
+    "answer": "It converts text into discrete tokens and maps those tokens to numerical IDs."
+  },
+  {
+    "prompt": "Why does a language model need a tokenizer?",
+    "answer": "A tokenizer converts human-readable text into discrete tokens that the model can process numerically."
+  },
+  {
+    "prompt": "How does tokenization prepare text for a neural language model?",
+    "answer": "It splits text into tokens and maps them to numerical token IDs."
+  }
+]

@@ -1,0 +1,53 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #202123;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #565869;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+}
+
+.sidebar button:hover {
+  background: #343541;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar p {
+  color: #aaa;
+  font-size: 14px;
+}
+.conversation-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.conversation-item:hover {
+  background: #343541;
+}
+
+.conversation-item.selected {
+  background: #343541;
+}
