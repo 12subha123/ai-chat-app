@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+﻿from pydantic import BaseModel, Field
 
 
 class ChatRequest(BaseModel):
@@ -8,3 +8,5 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     message: str
+    image_path: str | None = None
+    video_path: str | None = None

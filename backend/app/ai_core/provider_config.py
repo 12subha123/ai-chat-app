@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+﻿from dataclasses import dataclass
 
 
 @dataclass
@@ -7,9 +7,9 @@ class ProviderConfig:
     web_answer: str = "gemini"
     knowledge: str = "internal_rag"
     web: str = "tavily"
-    voice: str = "mock_voice"
-    image: str = "not_connected"
-    video: str = "not_connected"
+    voice: str = "local_voice"
+    image: str = "local_diffusion"
+    video: str = "local_video"
 
     def validate(self) -> None:
         providers = {

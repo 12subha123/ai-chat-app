@@ -1,3 +1,5 @@
+﻿from pathlib import Path
+
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
@@ -17,7 +19,6 @@ router = APIRouter(
 )
 
 
-# Create one orchestrator instance for the backend process.
 _orchestrator = AIOrchestrator()
 
 
@@ -36,9 +37,6 @@ def chat(
 ):
     context = []
 
-    # ---------------------------------------------------------
-    # 1. Load existing conversation context
-    # ---------------------------------------------------------
     if request.conversation_id is not None:
         add_message(
             db=db,
@@ -52,25 +50,16 @@ def chat(
             conversation_id=request.conversation_id,
         )
 
-    # ---------------------------------------------------------
-    # 2. Build AI Core request
-    # ---------------------------------------------------------
     ai_request = AIRequest(
         message=request.message,
         conversation_id=request.conversation_id,
         context=context,
     )
 
-    # ---------------------------------------------------------
-    # 3. Let the AI Orchestrator choose the capability
-    # ---------------------------------------------------------
     ai_response = _orchestrator.handle(ai_request)
 
     response = ai_response.message
 
-    # ---------------------------------------------------------
-    # 4. Store assistant response in conversation memory
-    # ---------------------------------------------------------
     if request.conversation_id is not None:
         add_message(
             db=db,
@@ -79,9 +68,30 @@ def chat(
             role="assistant",
         )
 
-    # ---------------------------------------------------------
-    # 5. Return the same API response format as before
-    # ---------------------------------------------------------
+    image_path = ai_response.metadata.get("image_path")
+
+    image_url = None
+
+    if image_path:
+        image_filename = Path(image_path).name
+        image_url = (
+            f"http://127.0.0.1:8001/generated-images/"
+            f"{image_filename}"
+        )
+
+    video_path = ai_response.metadata.get("video_path")
+
+    video_url = None
+
+    if video_path:
+        video_filename = Path(video_path).name
+        video_url = (
+            f"http://127.0.0.1:8001/generated-videos/"
+            f"{video_filename}"
+        )
+
     return ChatResponse(
         message=response,
+        image_path=image_url,
+        video_path=video_url,
     )

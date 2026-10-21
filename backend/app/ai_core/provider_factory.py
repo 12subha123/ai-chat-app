@@ -1,37 +1,22 @@
-from typing import Any
+﻿from typing import Any
 
 from .provider_config import ProviderConfig
 
 
 class ProviderFactory:
-    """
-    Resolves provider names from ProviderConfig
-    and stores registered provider implementations.
-    """
-
     def __init__(self, config: ProviderConfig | None = None):
         self.config = config if config is not None else ProviderConfig()
-
         self.config.validate()
-
         self._providers: dict[str, Any] = {}
+        self.register_default_providers()
 
     def register(self, name: str, provider: Any) -> None:
-        """
-        Register a provider implementation under a provider name.
-        """
         if not name.strip():
             raise ValueError("Provider name cannot be empty.")
 
         self._providers[name] = provider
 
-    def register_external_provider(
-        self,
-        provider: Any,
-    ) -> None:
-        """
-        Register an external provider using its own provider name.
-        """
+    def register_external_provider(self, provider: Any) -> None:
         provider_name = getattr(provider, "name", None)
 
         if not isinstance(provider_name, str) or not provider_name.strip():
@@ -39,15 +24,9 @@ class ProviderFactory:
                 "External provider must define a non-empty name."
             )
 
-        self.register(
-            provider_name,
-            provider,
-        )
+        self.register(provider_name, provider)
 
     def get_provider_name(self, capability: str) -> str:
-        """
-        Return the configured provider name for a capability.
-        """
         provider_name = getattr(self.config, capability, None)
 
         if provider_name is None:
@@ -58,11 +37,7 @@ class ProviderFactory:
         return provider_name
 
     def get_provider(self, capability: str) -> Any:
-        """
-        Return the provider configured for a capability.
-        """
         provider_name = self.get_provider_name(capability)
-
         provider = self._providers.get(provider_name)
 
         if provider is None:
@@ -74,23 +49,16 @@ class ProviderFactory:
         return provider
 
     def register_default_providers(self) -> None:
-        """
-        Register providers currently implemented internally
-        and configured external providers.
-        """
         from .providers.custom_transformer_provider import (
             CustomTransformerProvider,
         )
-        from .providers.gemini_answer_provider import (
-            GeminiAnswerProvider,
-        )
-        from .providers.mock_voice_provider import (
-            MockVoiceProvider,
-        )
-        from .providers.tavily_web_provider import (
-            TavilyWebProvider,
-        )
+        from .providers.gemini_answer_provider import GeminiAnswerProvider
+        from .providers.local_voice_provider import LocalVoiceProvider
+        from .providers.mock_voice_provider import MockVoiceProvider
+        from .providers.tavily_web_provider import TavilyWebProvider
+        from .providers.local_video_provider import LocalVideoProvider
         from .tools.rag_llm_tool import RAGLLMTool
+        from .providers.local_diffusion_provider import LocalDiffusionProvider
 
         self.register(
             "custom_transformer",
@@ -117,26 +85,23 @@ class ProviderFactory:
             MockVoiceProvider(),
         )
 
+        self.register(
+            "local_voice",
+            LocalVoiceProvider(),
+        )
+
+        self.register("local_diffusion", LocalDiffusionProvider())
+        self.register("local_video", LocalVideoProvider())
+
     def register_provider_for_capability(
         self,
         capability: str,
         provider: Any,
     ) -> None:
-        """
-        Register a provider using the provider name configured
-        for a specific capability.
-        """
         provider_name = self.get_provider_name(capability)
-
-        self.register(
-            provider_name,
-            provider,
-        )
+        self.register(provider_name, provider)
 
     def external_status(self) -> dict[str, dict[str, Any]]:
-        """
-        Return the status of registered external providers.
-        """
         result = {}
 
         for name, provider in self._providers.items():
@@ -154,10 +119,6 @@ class ProviderFactory:
         return result
 
     def status(self) -> dict[str, dict[str, Any]]:
-        """
-        Return the configured and registration status
-        of every AI capability.
-        """
         capabilities = {
             "llm": self.config.llm,
             "web_answer": self.config.web_answer,

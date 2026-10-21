@@ -36,6 +36,7 @@ export default function useChat() {
       const assistantMessage = {
         role: "assistant",
         content: data.message,
+        imagePath: data.image_path || null,
       };
 
       setMessages((previousMessages) => [

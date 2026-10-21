@@ -1,4 +1,4 @@
-from .capabilities.image_capability import ImageCapability
+﻿from .capabilities.image_capability import ImageCapability
 from .capabilities.llm_capability import LLMCapability
 from .capabilities.video_capability import VideoCapability
 from .capabilities.voice_capability import VoiceCapability
@@ -59,8 +59,12 @@ class AIOrchestrator:
             )
         )
 
-        self.registry.register(ImageCapability())
-        self.registry.register(VideoCapability())
+        self.registry.register(ImageCapability(provider_factory=self.provider_factory,))
+        self.registry.register(
+    VideoCapability(
+        provider_factory=self.provider_factory,
+    )
+)
 
     def _register_external_providers(self) -> None:
         """
