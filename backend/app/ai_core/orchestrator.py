@@ -1,80 +1,111 @@
+from .capabilities.image_capability import ImageCapability
+from .capabilities.llm_capability import LLMCapability
+from .capabilities.video_capability import VideoCapability
+from .capabilities.voice_capability import VoiceCapability
+from .capabilities.web_capability import WebCapability
+from .capability_registry import CapabilityRegistry
+from .knowledge.knowledge_capability import KnowledgeCapability
 from .models import AIRequest, AIResponse
-from .router import Capability, route_request
-from .tools.llm_tool import generate_llm_response
+from .provider_config import ProviderConfig
+from .provider_factory import ProviderFactory
+from .providers.external_web_provider import ExternalWebProvider
+from .router import route_request
 
 
 class AIOrchestrator:
-    """
-    Central coordinator for the AI system.
+    def __init__(
+        self,
+        llm_capability: LLMCapability | None = None,
+        knowledge_capability: KnowledgeCapability | None = None,
+        provider_config: ProviderConfig | None = None,
+    ):
+        self.registry = CapabilityRegistry(
+            provider_config=provider_config,
+        )
 
-    The orchestrator receives a standardized AIRequest,
-    determines the required capability, and delegates
-    the request to the appropriate service.
-    """
+        self.provider_factory = ProviderFactory(
+            config=self.registry.provider_config,
+        )
+
+        self.provider_factory.register_default_providers()
+
+        self._register_external_providers()
+
+        self.registry.register(
+            llm_capability
+            if llm_capability is not None
+            else LLMCapability(
+                generation_provider=self.provider_factory.get_provider("llm"),
+            )
+        )
+
+        self.registry.register(
+            knowledge_capability
+            if knowledge_capability is not None
+            else KnowledgeCapability(
+                provider_factory=self.provider_factory,
+            )
+        )
+
+        self.registry.register(
+            WebCapability(
+                provider_factory=self.provider_factory,
+            )
+        )
+
+        self.registry.register(
+            VoiceCapability(
+                provider_factory=self.provider_factory,
+            )
+        )
+
+        self.registry.register(ImageCapability())
+        self.registry.register(VideoCapability())
+
+    def _register_external_providers(self) -> None:
+        """
+        Register external providers that are currently implemented.
+        """
+        web_provider_name = self.provider_factory.get_provider_name("web")
+
+        if web_provider_name == "external_web":
+            self.provider_factory.register_external_provider(
+                ExternalWebProvider()
+            )
 
     def handle(self, request: AIRequest) -> AIResponse:
         capability = route_request(request)
 
-        if capability == Capability.LLM:
-            return self._handle_llm(request)
-
-        if capability == Capability.KNOWLEDGE:
-            return self._handle_knowledge(request)
-
-        if capability == Capability.WEB:
-            return self._handle_web(request)
-
-        if capability == Capability.VOICE:
-            return self._handle_voice(request)
-
-        if capability == Capability.IMAGE:
-            return self._handle_image(request)
-
-        if capability == Capability.VIDEO:
-            return self._handle_video(request)
-
-        return AIResponse(
-            message="I could not determine which capability to use.",
-            source="orchestrator",
+        return self._execute_registered_capability(
+            name=capability.value,
+            request=request,
         )
 
-    def _handle_llm(self, request: AIRequest) -> AIResponse:
-        response = generate_llm_response(
-            message=request.message,
-            conversation_context=request.context,
-        )
+    def _execute_registered_capability(
+        self,
+        name: str,
+        request: AIRequest,
+    ) -> AIResponse:
+        capability = self.registry.get(name)
 
-        return AIResponse(
-            message=response,
-            source="llm",
-        )
+        if capability is None:
+            return AIResponse(
+                message=f"Capability '{name}' is not available.",
+                source="orchestrator",
+            )
 
-    def _handle_knowledge(self, request: AIRequest) -> AIResponse:
-        return AIResponse(
-            message="Knowledge retrieval is not connected yet.",
-            source="knowledge",
-        )
+        if not capability.available:
+            return AIResponse(
+                message=(
+                    f"The '{name}' capability is recognized, "
+                    "but its provider is not connected yet."
+                ),
+                source="orchestrator",
+                metadata={
+                    "capability": name,
+                    "available": False,
+                    "provider": capability.provider,
+                },
+            )
 
-    def _handle_web(self, request: AIRequest) -> AIResponse:
-        return AIResponse(
-            message="Web retrieval is not connected yet.",
-            source="web",
-        )
-
-    def _handle_voice(self, request: AIRequest) -> AIResponse:
-        return AIResponse(
-            message="Voice processing is not connected yet.",
-            source="voice",
-        )
-
-    def _handle_image(self, request: AIRequest) -> AIResponse:
-        return AIResponse(
-            message="Image generation is not connected yet.",
-            source="image",
-        )
-
-    def _handle_video(self, request: AIRequest) -> AIResponse:
-        return AIResponse(
-            message="Video generation is not connected yet.",
-            source="video",
-        )
+        return capability.execute(request)
