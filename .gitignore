@@ -79,3 +79,44 @@ llm_model/checkpoints_expanded_320/
 *.tmp
 *.temp
 *.bak
+# =========================
+# Uploaded documents
+# =========================
+
+backend/app/uploads/
+
+# =========================
+# Generated vector database
+# =========================
+
+knowledge/vector_db/
+backend/knowledge/vector_db/
+
+# =========================
+# Generated ML outputs
+# =========================
+
+ml_models/*/inference/generated_*.mp4
+ml_models/*/inference/generated_frames/
+ml_models/*/inference/backend_generated/
+ml_models/*/inference/original_frame_*.png
+
+# =========================
+# Generated datasets
+# =========================
+
+video_dataset_source/
+ml_models/*/data/
+
+# =========================
+# Local test files
+# =========================
+
+upload-test.txt
+# =========================
+# Image generation outputs
+# =========================
+
+ml_models/*/checkpoints/
+ml_models/*/inference/*.png
+ml_models/*/inference/*/*.png

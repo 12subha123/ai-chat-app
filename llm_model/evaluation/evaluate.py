@@ -20,9 +20,14 @@ if str(PROJECT_ROOT) not in sys.path:
 # Project imports
 # --------------------------------------------------
 
-from llm_model.inference.inference_engine import (
-    InferenceEngine,
-)
+try:
+    from ..inference.inference_engine import InferenceEngine
+except ImportError:
+    # Support running this file directly as a script.
+    LLM_MODEL_DIR = PROJECT_ROOT / "llm_model"
+    if str(LLM_MODEL_DIR) not in sys.path:
+        sys.path.insert(0, str(LLM_MODEL_DIR))
+    from inference.inference_engine import InferenceEngine
 
 
 # --------------------------------------------------

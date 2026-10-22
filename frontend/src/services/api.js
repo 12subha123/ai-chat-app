@@ -2,7 +2,8 @@ const API_BASE_URL = "http://127.0.0.1:8001";
 
 export async function sendMessage(
   message,
-  conversationId = null
+  conversationId = null,
+  attachmentPath = null
 ) {
   const response = await fetch(
     `${API_BASE_URL}/chat`,
@@ -14,6 +15,7 @@ export async function sendMessage(
       body: JSON.stringify({
         message: message,
         conversation_id: conversationId,
+        attachment_path: attachmentPath,
       }),
     }
   );
@@ -26,7 +28,6 @@ export async function sendMessage(
 
   return response.json();
 }
-
 
 export async function createConversation(title) {
   const response = await fetch(
@@ -50,6 +51,7 @@ export async function createConversation(title) {
 
   return response.json();
 }
+
 export async function getUserConversations(userId) {
   const response = await fetch(
     `${API_BASE_URL}/conversations/user/${userId}`
@@ -63,6 +65,7 @@ export async function getUserConversations(userId) {
 
   return response.json();
 }
+
 export async function getConversationMessages(conversationId) {
   const response = await fetch(
     `${API_BASE_URL}/conversations/${conversationId}/messages`

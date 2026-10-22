@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 import logging
 
 from fastapi import FastAPI
@@ -10,6 +10,7 @@ from app.routes.health import router as health_router
 from app.routes.conversations import router as conversations_router
 from app.routes.auth import router as auth_router
 from app.routes.voice import router as voice_router
+from app.routes.uploads import router as uploads_router
 
 from app.database.db import init_db
 from app.core.config import settings
@@ -52,7 +53,6 @@ app.mount(
 )
 
 
-
 GENERATED_VIDEOS_DIRECTORY = (
     PROJECT_ROOT
     / "ml_models"
@@ -64,6 +64,8 @@ GENERATED_VIDEOS_DIRECTORY.mkdir(
     parents=True,
     exist_ok=True,
 )
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],
@@ -73,17 +75,19 @@ app.add_middleware(
 )
 
 
-
 app.mount(
     "/generated-videos",
     StaticFiles(directory=GENERATED_VIDEOS_DIRECTORY),
     name="generated-videos",
 )
+
+
 app.include_router(health_router)
 app.include_router(chat_router)
 app.include_router(conversations_router)
 app.include_router(auth_router)
 app.include_router(voice_router)
+app.include_router(uploads_router)
 
 
 @app.get("/")
@@ -94,4 +98,3 @@ def root():
         "message": "AI Chat App backend is running!",
         "status": "success",
     }
-

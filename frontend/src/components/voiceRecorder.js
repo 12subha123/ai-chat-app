@@ -50,7 +50,7 @@ function VoiceRecorder({ onTranscription }) {
           );
 
           const response = await fetch(
-            "http://127.0.0.1:8000/voice/transcribe",
+            "http://127.0.0.1:8001/voice/transcribe",
             {
               method: "POST",
               body: formData,

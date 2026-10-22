@@ -3,6 +3,8 @@ import { getConversationMessages } from "../services/api";
 
 import Message from "./Message";
 import InputBox from "./InputBox";
+import DocumentUpload from "./DocumentUpload";
+import WebcamCapture from "./WebcamCapture";
 import "../styles/chatbox.css";
 
 function ChatBox({ conversationId, voiceText }) {
@@ -16,6 +18,7 @@ function ChatBox({ conversationId, voiceText }) {
   ]);
 
   const [isThinking, setIsThinking] = useState(false);
+  const [attachment, setAttachment] = useState(null);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -52,6 +55,15 @@ function ChatBox({ conversationId, voiceText }) {
 
     loadMessages();
   }, [conversationId]);
+
+  function handleDocumentUpload(uploadResult) {
+    console.log(
+      "Uploaded document:",
+      uploadResult
+    );
+
+    setAttachment(uploadResult);
+  }
 
   function handleMessageSent(
     userMessage,
@@ -115,11 +127,20 @@ function ChatBox({ conversationId, voiceText }) {
         <div ref={messagesEndRef} />
       </div>
 
+      <DocumentUpload
+        onUpload={handleDocumentUpload}
+      />
+
+      <WebcamCapture
+        onUpload={handleDocumentUpload}
+      />
+
       <InputBox
         onMessageSent={handleMessageSent}
         onThinking={() => setIsThinking(true)}
         conversationId={conversationId}
         voiceText={voiceText}
+        attachment={attachment}
       />
     </div>
   );
